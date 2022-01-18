@@ -1,0 +1,105 @@
+
+ body{
+  background-color:white;
+}
+tr img{
+  width: 400px
+  hight 200px;
+}
+
+
+
+header{
+  background-color: blue;
+  opacity: .5;
+  text-align: center;
+  font-size: 30pt;
+  color: white
+     
+}
+header:hover{
+opacity: 1;
+}
+.div1{
+  background-color:green;
+  overflow: hidden;
+  opacity: 1;
+  position: relative;
+  top: 10px;
+  color: black;
+  font-size: medium;
+  text-align: justify;
+  padding: 10px;
+  
+}
+.div1:hover{
+  opacity: 1;;
+}
+
+
+.div2{
+  background-color:rgb(192, 182, 238);
+  position: relative;
+  height: 80px;
+  width: 500px;
+  padding:20px;
+  text-align: center;
+  transition:ease-in;
+ animation-iteration-count: infinite;
+ }
+.div2:hover{
+   animation-name:contract;
+   animation-duration: 10s;
+     
+}
+
+.div5{
+  border: solid 3px;
+  width:600px;
+  height:20px;
+  margin:0 auto;
+  line-height:10px;
+  text-align: center;
+  background-color: green;
+  color: white;
+  padding:10px;
+  text-align:center;
+  transition-duration:20s;
+ 
+
+  }
+.div6{
+  border: solid 3px;
+  text-align: center;
+  color:white;
+  background-color:green;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1px 10px;
+  cursor:pointer;
+
+  
+}
+
+
+
+@keyframes contract{
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:0px; top:0px;}
+  50%  {background-color:blue; left:500px; top:0px;}
+  75%  {background-color:rgb(230, 86, 174); left:800px; top:0px;}
+  0% {background-color:rgb(197, 236, 191); left:0px; top:0px;}
+}
+
+
+table{
+  text-align: center;
+}
+table th, td { 
+  width: 50%;
+  padding:10px 20px 5px 50px;
+  
+ 
+
+}
+
