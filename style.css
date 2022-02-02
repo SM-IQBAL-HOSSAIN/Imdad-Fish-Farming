@@ -1,111 +1,227 @@
- body{
-  background-color:white;
-}
-tr img{
-  width: 400px
-  hight 200px;
-}
-
-
-
-header{
-  background-color: blue;
-  opacity: .5;
-  text-align: center;
-  font-size: 30pt;
-  color: white
-     
-}
-header:hover{
-opacity: 1;
-}
-.div1{
-  background-color:cadetblue;
-  overflow: hidden;
-  opacity: 1;
-  position: relative;
-  top: 10px;
-  color:black;
-  font-size: medium;
-  text-align: justify;
-  padding: 10px;
-  
-}
-.div1:hover{
-  opacity: 1;;
-}
-
-
-.div2{
-  background-color:rgb(192, 182, 238);
-  position: relative;
-  height: 80px;
-  width: 500px;
-  padding:20px;
-  text-align: center;
-  transition:ease-in;
- animation-iteration-count: infinite;
- }
-.div2:hover{
-   animation-name:contract;
-   animation-duration: 10s;
-     
-}
-
-.div5{
-  border: solid 3px;
-  width:600px;
-  height:20px;
-  margin:0 auto;
-  line-height:10px;
-  text-align: center;
-  background-color: green;
-  color: white;
-  padding:10px;
-  text-align:center;
-  transition-duration:20s;
  
 
-  }
-.div6{
-  border: solid 3px;
-  text-align: center;
-  color:white;
-  background-color:green;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 1px 10px;
-  cursor:pointer;
 
-  
+*{
+    box-sizing: border-box;
+
 }
-.description{
-  background-color: green;
+  .menu{
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+    margin-bottom:10px;
+   
 }
 
+.menu a {
+    box-sizing: border-box;
+    text-decoration:none;
+    padding:15px;
+    color :white;
+    background-color: cornflowerblue;
+    margin: 5px;
 
-@keyframes contract{
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:0px; top:0px;}
-  50%  {background-color:blue; left:500px; top:0px;}
-  75%  {background-color:rgb(230, 86, 174); left:800px; top:0px;}
-  0% {background-color:rgb(197, 236, 191); left:0px; top:0px;}
+
+}
+       
+
+        .container{
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+           
+         
+        }
+        .card{
+            box-sizing:border-box;
+            width:300px;
+            padding:10px;
+            margin:5px;
+            flex-grow: 1;
+            justify-content:center;
+            background-color: rebeccapurple;
+        }
+      
+   .img-style{
+       width:310px;
+       height:250px;
+      
+   }
+
+   .card h1, p{
+       color:white;
+       text-align: center;
+   }
+     /*blog about start hearr*/
+#about{
+    min-height: 95vh;
+    padding: 5rem 1rem;
+    font-size:2.6rem;
+    text-align: center;
+    justify-content:center;
+    text-justify: distribute-all-lines;
+    background-color:cadetblue;
+
 }
 
-
-table{
-  text-align: center;
-  justify-content: center;
-  
+.about-para{
+    color: white;
+    font-family: Tangerine;
 }
-table th, td { 
-  width: 50%;
-  padding:10px 20px 5px 50px;
+#about p{
+    color:black;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (max-width:600px) {
+
+        .menu{
+           
+            flex-direction: column;
+            padding:10px;
+            margin-bottom:15px;
+        }
+        
+        .menu a {
+            box-sizing: border-box;
+            text-decoration:none;
+            padding:15px;
+            color :white;
+            background-color: cornflowerblue;
+            margin: 10px 0; 
+            text-align: center;
+            border-radius: 10px;
+        
+        
+        }
+
+
+
+
+
+    .container{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color:rgba(46, 69, 146, 0.897);
+       
      
+    }
+    .card{
+        box-sizing: bo;
+        width:300px;
+        box-shadow: 2px 4px 5px black;
+        padding:10px;
+            margin:10px 50px ;
+            flex-grow: 1;
+            justify-content:center;
+        background-color:rgba(106, 46, 146, 0.897);
+
+    }
+    .card:hover{
+        box-shadow: 10px 12px 5px white;
+
+    }
+  
+.img-style{
+   width:100%;
 }
 
-table th, u { 
- background-color: pink;
-     
+   }
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+
 }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+    body{
+        background-color: grey;
+    }
+   nav{
+       text-decoration: none;
+   }
+
+
+    nav li{
+       
+        display:inline-block;
+        margin: 2rem;
+        padding: 1rem; 
+        transition: all 0.4s;   
+    }
+    nav li:last-child{
+        margin: 0;   
+    }
+    
+    nav li :hover{
+        background-color: #1913d5;
+        border-radius: 0.6rem;
+        
+        transform:scale(1.5)
+    }
+    
+    .nav-link{
+        font: size 1.8rem ;
+        color:white;
+        cursor:pointer;
+    }
+
+
+
+
+
+    .container{
+        box-sizing: border-box;
+     flex-flow: row wrap;
+     justify-content:flex-start;
+       
+        background-color:rgba(46, 69, 146, 0.897);
+       
+     
+    }
+    .card{
+        box-sizing: border-box;
+        width:300px;
+        box-shadow: 2px 4px 5px black;
+        padding:10px;               
+        background-color:rgba(106, 46, 146, 0.897);
+
+    }
+    .img-style{
+        width:100%;
+     }
+
+
+    .card:hover{
+        box-shadow: 10px 12px 5px white;
+
+    }
+  
+
+
+   }
+
+
+
 
