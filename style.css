@@ -54,7 +54,7 @@
    }
      /*blog about start hearr*/
 #about{
-    min-height: 95vh;
+    min-height:50vh;
     padding: 5rem 1rem;
     font-size:2.6rem;
     text-align: center;
