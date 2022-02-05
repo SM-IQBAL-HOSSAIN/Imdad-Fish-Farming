@@ -23,7 +23,12 @@
 
 
 }
-       
+     .marquee{
+    background-color:black;
+    color: white;
+}
+
+  
 
         .container{
             width: 100%;
