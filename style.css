@@ -21,17 +21,20 @@
 
 
 }
-     .marquee{
+.marquee{
     background-color:black;
     color: white;
 }
 
 
+
+       
+
         .container{
             width: 100%;
             box-sizing: border-box;
             display: flex;
-          
+           
          
         }
         .card{
@@ -39,8 +42,7 @@
             width:300px;
             padding:10px;
             margin:5px;
-            flex-grow: 1;
-            justify-content:center;
+            justify-content:space-around;
             background-color: rebeccapurple;
         }
       
@@ -56,7 +58,7 @@
    }
      /*blog about start hearr*/
 #about{
-    min-height:50vh;
+    min-height:40vh;
     padding: 5rem 1rem;
     font-size:4.6rem;
     text-align: center;
@@ -75,60 +77,6 @@
     font-size: 1.5rem;
     text-align: justify;
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (max-width:600px) {
-
-        .menu{
-           
-            flex-direction: column;
-            padding:10px;
-            margin-bottom:15px;
-        }
-        
-        .menu a {
-            box-sizing: border-box;
-            text-decoration:none;
-            padding:15px;
-            color :white;
-            background-color: cornflowerblue;
-            margin: 10px 0; 
-            text-align: center;
-            border-radius: 10px;
-        
-        
-        }
-
-    .container{
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        background-color:rgba(46, 69, 146, 0.897);
-       
-     
-    }
-       .card{
-        box-sizing: border-box;
-        width:300px;
-        box-shadow: 2px 4px 5px black;
-        padding:10px;
-        margin:10px 10px;
-        justify-content:center;
-        background-color:rgba(106, 46, 146, 0.897);
-
-    }
-    .card:hover{
-        box-shadow: 10px 12px 5px white;
-
-    }
-  
-.img-style{
-   width:100%;
-}
-
-   }
-
 /* Contract Start hear ) */
 
 html, body {
@@ -199,9 +147,98 @@ background: #2371a0;
 
 
 
+
+
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (max-width:600px) {
+
+        .menu{
+           
+            flex-direction: column;
+            padding:10px;
+            margin-bottom:15px;
+        }
+        
+        .menu a {
+            box-sizing: border-box;
+            text-decoration:none;
+            padding:15px;
+            color :white;
+            background-color: cornflowerblue;
+            margin: 10px 0; 
+            text-align: center;
+            border-radius: 10px;
+        
+        
+        }
+
+
+
+
+
+    .container{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color:rgba(46, 69, 146, 0.897);
+       
+     
+    }
+    .card{
+        box-sizing: bo;
+        width:300px;
+        box-shadow: 2px 4px 5px black;
+        padding:10px;
+            margin:10px 50px ;
+            flex-grow: 1;
+            justify-content:center;
+        background-color:rgba(106, 46, 146, 0.897);
+
+    }
+    .card:hover{
+        box-shadow: 10px 12px 5px white;
+
+    }
+  
+.img-style{
+   width:100%;
+}
+
+   }
+
+   @media (min-width: 568px) {
+    .main-block {
+    flex-direction: row;
+    }
+    .left-part, form {
+    width: 50%;
+    }
+    .fa-envelope {
+    margin-top: 0;
+    margin-left: 20%;
+    }
+    .fa-at {
+    margin-top: -10%;
+    margin-left: 65%;
+    }
+    .fa-mail-bulk {
+    margin-top: 2%;
+    margin-left: 28%;
+    }
+    }
+    
+
 @media only screen and (min-width: 600px) {
 
 }
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -250,10 +287,12 @@ background: #2371a0;
     }
 
     .container{
-     box-sizing: border-box;
+        box-sizing: border-box;
      flex-flow: row wrap;
      justify-content:flex-start;
-     background-color:rgba(46, 69, 146, 0.897);
+       
+        background-color:rgba(46, 69, 146, 0.897);
+       
      
     }
     .card{
@@ -277,6 +316,7 @@ background: #2371a0;
 
 
    }
+
 
 
 
