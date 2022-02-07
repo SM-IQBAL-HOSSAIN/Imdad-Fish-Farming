@@ -1,6 +1,4 @@
  
-
-
 *{
     box-sizing: border-box;
 
@@ -28,13 +26,12 @@
     color: white;
 }
 
-  
 
         .container{
             width: 100%;
             box-sizing: border-box;
             display: flex;
-           
+          
          
         }
         .card{
@@ -102,10 +99,6 @@
         
         }
 
-
-
-
-
     .container{
         box-sizing: border-box;
         display: flex;
@@ -120,7 +113,7 @@
         width:300px;
         box-shadow: 2px 4px 5px black;
         padding:10px;
-        margin:10px 0;
+        margin:10px 10px;
         justify-content:center;
         background-color:rgba(106, 46, 146, 0.897);
 
